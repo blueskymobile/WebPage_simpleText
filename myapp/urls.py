@@ -25,5 +25,6 @@ urlpatterns = [
 
   url(r'^admin/', admin.site.urls),  
   url(r'^hello/$', views.hello, name ="hello"), 
- 
+  url(r'^morning/', views.morning, name = 'morning'),
+  url(r'^article/(\d+)/', views.viewArticle, name = 'article'),
 ]

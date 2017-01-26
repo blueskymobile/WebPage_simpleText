@@ -27,4 +27,7 @@ urlpatterns = [
   url(r'^hello/$', views.hello, name ="hello"), 
   url(r'^morning/', views.morning, name = 'morning'),
   url(r'^article/(\d+)/', views.viewArticle, name = 'article'),
+  url(r'^articles/(\d+)/(\d+)/', views.viewArticles, name = 'articles'),
+  #url(r'^articles/(?P\d{2})/(?P\d{4})/', views.viewArticles, name = 'articles'),
+  url(r'^crudops/', views.crudops, name = 'crudops'),
 ]
